@@ -38,8 +38,25 @@ A hybrid application (Django Backend + PyQt5 Desktop App) for visualizing equipm
    python frontend-desktop/main.py
    ```
 
-## Note on Web Frontend
-The Web Frontend (React) setup requires Node.js, which was not detected in the environment. Thus only the Desktop frontend is implemented.
+### Web Frontend (React)
+1. **Prerequisite**: Ensure Node.js is installed.
+2. Navigate to `frontend-web/` folder.
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start Development Server:
+   ```bash
+   npm run dev
+   ```
+   Or use the provided script: `run_frontend.bat`.
+   
+   Access at `http://localhost:5173`.
+   
+### Helper Scripts (Windows)
+We have provided easy-to-use batch scripts in the root directory:
+- `run_backend.bat`: Sets up environment and starts Django.
+- `run_frontend.bat`: Installs dependencies and starts React.
 
 ## Usage
 1. Start the Backend Server.

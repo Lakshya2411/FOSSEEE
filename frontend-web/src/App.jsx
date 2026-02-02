@@ -7,8 +7,11 @@ import './App.css';
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 // Configure Axios
+// Configure Axios
+// Check if VITE_API_URL is set (Production), otherwise fallback to local backend
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
 const api = axios.create({
-    baseURL: 'http://127.0.0.1:8000/api'
+    baseURL: `${API_BASE_URL}/api`
 });
 
 function App() {

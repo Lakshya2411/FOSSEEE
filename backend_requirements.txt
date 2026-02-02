@@ -3,4 +3,7 @@ djangorestframework
 pandas
 django-cors-headers
 reportlab
-reportlab
+gunicorn
+whitenoise
+dj-database-url
+psycopg2-binary

@@ -16,7 +16,7 @@ if exist "..\.venv\Scripts\activate.bat" (
 
 :: Install Requirements (just in case)
 echo Installing Dependencies...
-pip install -r ..\backend_requirements.txt
+pip install -r requirements.txt
 
 :: Run Migrations
 echo Running Migrations...

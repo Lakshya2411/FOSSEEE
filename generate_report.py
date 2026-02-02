@@ -71,6 +71,20 @@ def create_report():
     story.append(ListFlowable(deploy_bullets, bulletType='bullet', start='circle'))
     story.append(Spacer(1, 24))
 
+    # User Guide
+    story.append(Paragraph("6. User Guide & Credentials", styles['Heading2']))
+    guide_bullets = [
+        ListItem(Paragraph("<b>Login Credentials</b>:<br/>Username: <b>admin</b><br/>Password: <b>admin123</b>", styles['Normal'])),
+        ListItem(Paragraph("<b>Step 1</b>: Open the application (Web URL or Desktop App).", styles['Normal'])),
+        ListItem(Paragraph("<b>Step 2</b>: Enter the credentials above to log in.", styles['Normal'])),
+        ListItem(Paragraph("<b>Step 3</b>: Click 'Upload New CSV' and select the provided <i>sample_equipment_data.csv</i>.", styles['Normal'])),
+        ListItem(Paragraph("<b>Step 4</b>: The system will parse the file and display summary statistics immediately.", styles['Normal'])),
+        ListItem(Paragraph("<b>Step 5</b>: Click the 'Visualizations' tab to see charts, or 'Raw Data' to browse the table.", styles['Normal'])),
+        ListItem(Paragraph("<b>Step 6</b>: (Web Only) Click 'Download Report' to get a PDF summary of that specific upload.", styles['Normal']))
+    ]
+    story.append(ListFlowable(guide_bullets, bulletType='bullet', start='circle'))
+    story.append(Spacer(1, 24))
+
     # Conclusion
     story.append(Paragraph("Conclusion", styles['Heading2']))
     story.append(Paragraph("The project is now fully functional and deployed. Users can upload data via the Web or Desktop, and the persistent SQLite database syncs the history across both platforms.", styles['Normal']))

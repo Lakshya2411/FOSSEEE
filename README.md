@@ -59,10 +59,33 @@ We have provided easy-to-use batch scripts in the root directory:
 - `run_frontend.bat`: Installs dependencies and starts React.
 
 ## Usage
-1. Start the Backend Server.
-2. Launch the Desktop App or open `http://localhost:5173`.
-3. **Login Credentials**:
-   - **Username**: `admin`
-   - **Password**: `admin123`
-4. Use "Upload New CSV" to upload `sample_equipment_data.csv`.
-5. View Stats, Charts, and Data in the tabs.
+
+### 1. Start the Backend (Required)
+Open a terminal in the root directory and run:
+```bash
+run_backend.bat
+```
+*Or manually: activates venv and runs `python manage.py runserver` inside `backend/`.*
+
+### 2. Run the Web Version
+Open a new terminal and run:
+```bash
+run_frontend.bat
+```
+*Or manually: `cd frontend-web` and `npm run dev`.*
+- Open `http://localhost:5173` in your browser.
+
+### 3. Run the Desktop Version
+Open a new terminal and run:
+```bash
+python frontend-desktop/main.py
+```
+*(Ensure `.venv` is active and dependencies are installed).*
+
+### Login Credentials
+- **Username**: `admin`
+- **Password**: `admin123`
+
+### Common Actions
+1. **Upload Data**: Use "Upload New CSV" to upload `sample_equipment_data.csv`.
+2. **Visualize**: View Stats, Charts, and Data in the respective tabs.

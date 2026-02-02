@@ -60,7 +60,9 @@ We have provided easy-to-use batch scripts in the root directory:
 
 ## Usage
 1. Start the Backend Server.
-2. Launch the Desktop App.
-3. Click "Login" (Enter any credentials).
+2. Launch the Desktop App or open `http://localhost:5173`.
+3. **Login Credentials**:
+   - **Username**: `admin`
+   - **Password**: `admin123`
 4. Use "Upload New CSV" to upload `sample_equipment_data.csv`.
 5. View Stats, Charts, and Data in the tabs.

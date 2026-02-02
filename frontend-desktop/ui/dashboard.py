@@ -8,9 +8,9 @@ from matplotlib.figure import Figure
 from .api_client import APIClient
 
 class Dashboard(QWidget):
-    def __init__(self):
+    def __init__(self, api_client=None):
         super().__init__()
-        self.api = APIClient()
+        self.api = api_client if api_client else APIClient()
         self.current_upload_id = None
         self.init_ui()
         

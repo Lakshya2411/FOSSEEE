@@ -8,7 +8,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 // Configure Axios
 const api = axios.create({
-    baseURL: '/api'
+    baseURL: 'http://127.0.0.1:8000/api'
 });
 
 function App() {

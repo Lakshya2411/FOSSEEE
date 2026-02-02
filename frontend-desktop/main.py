@@ -10,7 +10,7 @@ if __name__ == "__main__":
     login = LoginDialog()
     if login.exec_() == QDialog.Accepted:
         # Proceed regardless of input for now, or validate if API supports it
-        window = Dashboard()
+        window = Dashboard(login.api_client)
         window.show()
         sys.exit(app.exec_())
     else:

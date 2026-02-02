@@ -1,0 +1,6 @@
+Django
+djangorestframework
+pandas
+django-cors-headers
+reportlab
+reportlab
